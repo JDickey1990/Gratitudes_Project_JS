@@ -1,0 +1,2 @@
+class GratitudesController < ApplicationController
+end
