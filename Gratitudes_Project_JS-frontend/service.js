@@ -5,15 +5,12 @@ class ApiService {
         this.baseUrl = `http://localhost:3000`
     }
 
-    fetchGratitudes(){
+     fetchGratitudes(){
         return fetch(`${this.baseUrl}/gratitudes`, {
         headers: {
             'content-type': 'application/json',
             }
         })
         .then(res => res.json())
-    }      
-
-
-
+        }     
 }

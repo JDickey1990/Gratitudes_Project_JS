@@ -12,4 +12,15 @@ class Gratitude {
         Gratitude.allGratitudes.push(this)
     }
 
+        static generateGratitudes(){
+            const gratitudesData = apiService.fetchGratitudes()
+                .then(data => 
+                    data.forEach(gratitude => {
+                        const newGratitude = new Gratitude(gratitude)
+                        console.log(this.allGratitudes)
+                    })
+                )
+                // .then(resp => Gratitude.renderGratitudes)
+
+        }
 }
