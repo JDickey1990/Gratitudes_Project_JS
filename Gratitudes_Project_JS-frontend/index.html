@@ -4,30 +4,73 @@
     <meta charset="utf-8">
     <title>Gratitude</title>
 
+    <script type="application/javascript" src="user.js" charset="UTF-8"></script>
     <script type="application/javascript" src="service.js" charset="UTF-8"></script>
     <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
     <script type="application/javascript" src="gratitude.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="index.css" />
+    
   </head>
+
   <body>
-   
-    <div class="container" id="container">
 
-      <h1> 99 Problems but this ain't one!</h1>
+      <div class="Header">
+        <h1>Gratitudes</h1>
+        <p>“Cultivate the habit of being grateful for every good thing that comes to you, and to give thanks continuously. And because all things have contributed to your advancement, you should include all things in your gratitude.”</p>
+        <h3>~Ralph Waldo Emerson~</h3>
+      </div>
 
-      <div id=new-user/gratitude-container></div>
-        <form id="new-user-form">
-          <label>Name:</label>
-          <input type="text" id="new-user-body"/>
-          <input type="submit"/>
+      <div class="new-user-container">
+        <form>
+          <input
+            type="text"
+            name="name"
+            value=""
+            placeholder="name"
+            class="user-name"
+            />
+            <br>
+            <input
+            type="submit"
+            name="submit"
+            value="Login"
+            class="submit"
+            >
         </form>
       </div>
 
-    </div>
+    
 
-    <div id="gratitudes-container" class="problems-container">
-      
-    </div>
-
-
+      <div id="gratitudes-container" class="gratitudes-container">
+  
+      </div>
+  
   </body>
 </html>
+
+<!-- <form class="new-gratitude-form">
+  <h1> 99 Problems but this ain't one!</h1>
+
+  <input
+    type="text"
+    name="name"
+    value=""
+    placeholder="Enter what you are grateful for..."
+    class="input-text"
+  />
+  <br />
+  <input
+    type="text"
+    name="image"
+    value=""
+    placeholder="Enter an image URL..."
+    class="input-text"
+  />
+  <br />
+  <input
+    type="submit"
+    name="submit"
+    value="Add a new gratitude"
+    class="submit"
+  />
+</form> -->
