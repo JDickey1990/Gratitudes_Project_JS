@@ -1984,3 +1984,76 @@ Processing by UsersController#create as JSON
 Completed 200 OK in 13ms (Views: 6.8ms | ActiveRecord: 1.1ms | Allocations: 6715)
 
 
+Started GET "/gratitudes" for ::1 at 2021-02-17 19:48:15 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 5314)
+
+
+Started POST "/users" for ::1 at 2021-02-17 19:48:23 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Wyatt", "user"=>{"name"=>"Wyatt"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Wyatt"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 3093)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/gratitudes" for ::1 at 2021-02-17 19:49:03 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 1.7ms | Allocations: 5410)
+
+
+Started POST "/users" for ::1 at 2021-02-17 19:49:09 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Wyatt", "user"=>{"name"=>"Wyatt"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Wyatt"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (pry):2:in `create'
+  [1m[36mUser Create (8.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Wyatt"], ["created_at", "2021-02-18 02:50:24.042899"], ["updated_at", "2021-02-18 02:50:24.042899"]]
+  ↳ (pry):2:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ (pry):2:in `create'
+Completed 500 Internal Server Error in 88647ms (ActiveRecord: 16.0ms | Allocations: 49413)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/gratitudes" for ::1 at 2021-02-17 19:50:47 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 1.3ms | Allocations: 5398)
+
+
+Started POST "/users" for ::1 at 2021-02-17 19:50:57 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Logan", "user"=>{"name"=>"Logan"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Logan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Logan"], ["created_at", "2021-02-18 02:50:57.409770"], ["updated_at", "2021-02-18 02:50:57.409770"]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Completed 200 OK in 22ms (Views: 3.3ms | ActiveRecord: 8.0ms | Allocations: 10279)
+
+
