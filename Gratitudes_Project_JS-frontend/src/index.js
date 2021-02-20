@@ -1,18 +1,21 @@
 //anything that doesn't belong in gratitude.js/service.js etc..
  const apiService = new ApiService()
  
-
-
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("HELLO!")
+    bindEventListeners()
     Gratitude.generateGratitudes()
 
+   
+})
+
+function bindEventListeners() {
     const login = document.querySelector(".new-user-container")
 
-    login.addEventListener("submit", function(e){
+    login.addEventListener("submit", (e) => {
         e.preventDefault()
         const userName = e.target.name.value
         User.generateUser(userName)
     })
-})
+}
+
 
