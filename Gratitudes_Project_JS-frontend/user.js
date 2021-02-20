@@ -9,7 +9,7 @@ class User {
     }
 
     static generateUser(userName){
-        const userData = apiService.fetchUser(userName)
+        apiService.fetchUser(userName)
             .then(userData => 
                  {
                 const newUser = new User(userData)

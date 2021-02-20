@@ -17,10 +17,25 @@ class Gratitude {
                 .then(data => 
                     data.forEach(gratitude => {
                         const newGratitude = new Gratitude(gratitude)
-                        console.log(this.allGratitudes)
+                        Gratitude.renderGratitudes(gratitude) 
                     })
-                )
-                // .then(resp => Gratitude.renderGratitudes)
-
+                )  
+                console.log(Gratitude.allGratitudes)
+                // Gratitude.renderGratitudes() 
         }
+
+        static renderGratitudes(gratitude) {
+            const ul = document.querySelector(".gratitudes-list")
+            // const array = Gratitude.allGratitudes WHY CAN'T I ACCESS THIS ARRAY HERE
+            // console.log(Gratitude.allGratitudes)
+            // for(const element of array) {
+                console.log(gratitude)
+                const li = document.createElement("li")
+                const li2 = document.createElement("li")
+                li.innerHTML = gratitude.name
+                ul.appendChild(li)
+            // }
+       
+        }
+    
 }

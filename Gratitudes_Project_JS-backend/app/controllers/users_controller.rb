@@ -14,8 +14,8 @@ class UsersController < ApplicationController
         if user 
             render json: user, include: [:gratitudes]
         else 
-            user = User.create(name: params[:name])
-            render json: user, include: [:gratitudes]
+            newUser = User.create(name: params[:name])
+            render json: newUser, include: [:gratitudes]
         end   
     end 
 
