@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     bindEventListeners()
     Gratitude.generateGratitudes()
-
+    Ui.appendQuotes()
    
 })
 

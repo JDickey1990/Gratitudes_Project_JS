@@ -2855,3 +2855,1429 @@ Processing by GratitudesController#index as */*
 Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 1111)
 
 
+Started GET "/gratitudes" for ::1 at 2021-02-19 22:14:34 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 5303)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-19 22:15:04 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1111)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-19 22:27:12 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.4ms | Allocations: 5270)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-19 22:27:13 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-19 22:31:59 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 1112)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-19 22:34:24 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.8ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.8ms | Allocations: 1111)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-19 22:36:54 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 1111)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-19 22:36:56 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.8ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.8ms | Allocations: 1111)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-19 22:37:00 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (1.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.2ms | Allocations: 1111)
+
+
+  [1m[35m (16.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:04:44 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 5303)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:04:45 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1111)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:04:52 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 1111)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:05:14 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.8ms | Allocations: 5799)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:05:22 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 1128)
+
+
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (2.1ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Good Health"], ["created_at", "2021-02-20 16:08:58.737376"], ["updated_at", "2021-02-20 16:08:58.737376"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:09:10 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 1273)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "gratitudes"[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "gratitudes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "description" varchar, "reason" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE  INDEX "index_gratitudes_on_user_id" ON "gratitudes" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210214171633)[0m
+  [1m[35m (5.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210214171206);
+
+[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-20 16:18:10.919516"], ["updated_at", "2021-02-20 16:18:10.919516"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "e618e056b56bde46eb447de31375e0e208c43c08"], ["created_at", "2021-02-20 16:18:10.933286"], ["updated_at", "2021-02-20 16:18:10.933286"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "gratitudes"[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "gratitudes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "description" varchar, "reason" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE  INDEX "index_gratitudes_on_user_id" ON "gratitudes" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210214171633)[0m
+  [1m[35m (5.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210214171206);
+
+[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-20 16:18:11.011332"], ["updated_at", "2021-02-20 16:18:11.011332"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-02-20 16:18:11.021325"], ["key", "environment"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "e618e056b56bde46eb447de31375e0e208c43c08"], ["created_at", "2021-02-20 16:18:11.032253"], ["updated_at", "2021-02-20 16:18:11.032253"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Sarah"], ["created_at", "2021-02-20 16:18:11.069297"], ["updated_at", "2021-02-20 16:18:11.069297"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Kenz"], ["created_at", "2021-02-20 16:18:11.079129"], ["updated_at", "2021-02-20 16:18:11.079129"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Money in the bank"], ["created_at", "2021-02-20 16:18:11.096788"], ["updated_at", "2021-02-20 16:18:11.096788"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Good Friends"], ["created_at", "2021-02-20 16:18:11.105687"], ["updated_at", "2021-02-20 16:18:11.105687"]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Freedom of religion"], ["created_at", "2021-02-20 16:18:11.116638"], ["updated_at", "2021-02-20 16:18:11.116638"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Parents"], ["created_at", "2021-02-20 16:18:11.127246"], ["updated_at", "2021-02-20 16:18:11.127246"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Weekends"], ["created_at", "2021-02-20 16:18:11.136110"], ["updated_at", "2021-02-20 16:18:11.136110"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Pets"], ["created_at", "2021-02-20 16:18:11.151607"], ["updated_at", "2021-02-20 16:18:11.151607"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Learning from mistakes"], ["created_at", "2021-02-20 16:18:11.161346"], ["updated_at", "2021-02-20 16:18:11.161346"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.5ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Opportunity to get an education"], ["created_at", "2021-02-20 16:18:11.174697"], ["updated_at", "2021-02-20 16:18:11.174697"]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Having a home"], ["created_at", "2021-02-20 16:18:11.189759"], ["updated_at", "2021-02-20 16:18:11.189759"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "The ability to read"], ["created_at", "2021-02-20 16:18:11.198689"], ["updated_at", "2021-02-20 16:18:11.198689"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.2ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Breathing fresh air"], ["created_at", "2021-02-20 16:18:11.208043"], ["updated_at", "2021-02-20 16:18:11.208043"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Laughter"], ["created_at", "2021-02-20 16:18:11.217414"], ["updated_at", "2021-02-20 16:18:11.217414"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.3ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Sunshine"], ["created_at", "2021-02-20 16:18:11.227880"], ["updated_at", "2021-02-20 16:18:11.227880"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Time"], ["created_at", "2021-02-20 16:18:11.237730"], ["updated_at", "2021-02-20 16:18:11.237730"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Clean water"], ["created_at", "2021-02-20 16:18:11.245609"], ["updated_at", "2021-02-20 16:18:11.245609"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Books"], ["created_at", "2021-02-20 16:18:11.254189"], ["updated_at", "2021-02-20 16:18:11.254189"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Kindness of a stranger"], ["created_at", "2021-02-20 16:18:11.263067"], ["updated_at", "2021-02-20 16:18:11.263067"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Campfires"], ["created_at", "2021-02-20 16:18:11.271880"], ["updated_at", "2021-02-20 16:18:11.271880"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Art"], ["created_at", "2021-02-20 16:18:11.280448"], ["updated_at", "2021-02-20 16:18:11.280448"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Mountains"], ["created_at", "2021-02-20 16:18:11.289333"], ["updated_at", "2021-02-20 16:18:11.289333"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.5ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Grocery Stores"], ["created_at", "2021-02-20 16:18:11.297733"], ["updated_at", "2021-02-20 16:18:11.297733"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Sunsets"], ["created_at", "2021-02-20 16:18:11.307349"], ["updated_at", "2021-02-20 16:18:11.307349"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["name", "Home"], ["description", "The house we live in currently"], ["reason", "It keeps us warm and we have shelter so at night if it is raining or snowing we are safe."], ["created_at", "2021-02-20 16:18:11.315945"], ["updated_at", "2021-02-20 16:18:11.315945"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:18:38 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 4179)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "gratitudes"[0m
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE "gratitudes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "description" varchar, "reason" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE  INDEX "index_gratitudes_on_user_id" ON "gratitudes" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210214171633)[0m
+  [1m[35m (6.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210214171206);
+
+[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-20 16:25:11.165517"], ["updated_at", "2021-02-20 16:25:11.165517"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "e618e056b56bde46eb447de31375e0e208c43c08"], ["created_at", "2021-02-20 16:25:11.177535"], ["updated_at", "2021-02-20 16:25:11.177535"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "gratitudes"[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "gratitudes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "description" varchar, "reason" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE  INDEX "index_gratitudes_on_user_id" ON "gratitudes" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210214171633)[0m
+  [1m[35m (4.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210214171206);
+
+[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-20 16:25:11.257066"], ["updated_at", "2021-02-20 16:25:11.257066"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.8ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-02-20 16:25:11.266120"], ["key", "environment"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "e618e056b56bde46eb447de31375e0e208c43c08"], ["created_at", "2021-02-20 16:25:11.276139"], ["updated_at", "2021-02-20 16:25:11.276139"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Sarah"], ["created_at", "2021-02-20 16:25:11.308519"], ["updated_at", "2021-02-20 16:25:11.308519"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Kenz"], ["created_at", "2021-02-20 16:25:11.316807"], ["updated_at", "2021-02-20 16:25:11.316807"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Money In The Bank"], ["created_at", "2021-02-20 16:25:11.334490"], ["updated_at", "2021-02-20 16:25:11.334490"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Good Friends"], ["created_at", "2021-02-20 16:25:11.342786"], ["updated_at", "2021-02-20 16:25:11.342786"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Freedom Of Religion"], ["created_at", "2021-02-20 16:25:11.352641"], ["updated_at", "2021-02-20 16:25:11.352641"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Parents"], ["created_at", "2021-02-20 16:25:11.360097"], ["updated_at", "2021-02-20 16:25:11.360097"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Weekends"], ["created_at", "2021-02-20 16:25:11.368103"], ["updated_at", "2021-02-20 16:25:11.368103"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.2ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Pets"], ["created_at", "2021-02-20 16:25:11.376422"], ["updated_at", "2021-02-20 16:25:11.376422"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Learning From Mistakes"], ["created_at", "2021-02-20 16:25:11.385032"], ["updated_at", "2021-02-20 16:25:11.385032"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Opportunity To Get An Education"], ["created_at", "2021-02-20 16:25:11.393043"], ["updated_at", "2021-02-20 16:25:11.393043"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Having A Home"], ["created_at", "2021-02-20 16:25:11.402215"], ["updated_at", "2021-02-20 16:25:11.402215"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.4ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "The Ability To Read"], ["created_at", "2021-02-20 16:25:11.409976"], ["updated_at", "2021-02-20 16:25:11.409976"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Breathing Fresh Air"], ["created_at", "2021-02-20 16:25:11.426285"], ["updated_at", "2021-02-20 16:25:11.426285"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Laughter"], ["created_at", "2021-02-20 16:25:11.434694"], ["updated_at", "2021-02-20 16:25:11.434694"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Sunshine"], ["created_at", "2021-02-20 16:25:11.443597"], ["updated_at", "2021-02-20 16:25:11.443597"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Time"], ["created_at", "2021-02-20 16:25:11.451607"], ["updated_at", "2021-02-20 16:25:11.451607"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Clean Water"], ["created_at", "2021-02-20 16:25:11.459926"], ["updated_at", "2021-02-20 16:25:11.459926"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Books"], ["created_at", "2021-02-20 16:25:11.468717"], ["updated_at", "2021-02-20 16:25:11.468717"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Kindness Of A Stranger"], ["created_at", "2021-02-20 16:25:11.477457"], ["updated_at", "2021-02-20 16:25:11.477457"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Campfires"], ["created_at", "2021-02-20 16:25:11.485890"], ["updated_at", "2021-02-20 16:25:11.485890"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Art"], ["created_at", "2021-02-20 16:25:11.494562"], ["updated_at", "2021-02-20 16:25:11.494562"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Mountains"], ["created_at", "2021-02-20 16:25:11.502511"], ["updated_at", "2021-02-20 16:25:11.502511"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Grocery Stores"], ["created_at", "2021-02-20 16:25:11.511066"], ["updated_at", "2021-02-20 16:25:11.511066"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Sunsets"], ["created_at", "2021-02-20 16:25:11.518861"], ["updated_at", "2021-02-20 16:25:11.518861"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Moon & Stars"], ["created_at", "2021-02-20 16:25:11.526923"], ["updated_at", "2021-02-20 16:25:11.526923"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Air Conditioning"], ["created_at", "2021-02-20 16:25:11.535035"], ["updated_at", "2021-02-20 16:25:11.535035"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Oceans"], ["created_at", "2021-02-20 16:25:11.543583"], ["updated_at", "2021-02-20 16:25:11.543583"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Modern Medicine"], ["created_at", "2021-02-20 16:25:11.551979"], ["updated_at", "2021-02-20 16:25:11.551979"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Music"], ["created_at", "2021-02-20 16:25:11.560143"], ["updated_at", "2021-02-20 16:25:11.560143"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Modern Medicine"], ["created_at", "2021-02-20 16:25:11.568436"], ["updated_at", "2021-02-20 16:25:11.568436"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Entrpreneurs"], ["created_at", "2021-02-20 16:25:11.577019"], ["updated_at", "2021-02-20 16:25:11.577019"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Inventors"], ["created_at", "2021-02-20 16:25:11.584909"], ["updated_at", "2021-02-20 16:25:11.584909"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["name", "Home"], ["description", "The house we live in currently"], ["reason", "It keeps us warm and we have shelter so at night if it is raining or snowing we are safe."], ["created_at", "2021-02-20 16:25:11.593399"], ["updated_at", "2021-02-20 16:25:11.593399"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:25:15 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 5334)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:32:52 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 5333)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:32:53 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 5328)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:32:54 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:32:54 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:33:19 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.6ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.6ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:33:20 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:33:39 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 5314)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:33:40 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:33:40 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:33:41 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:34:01 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:34:02 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:34:03 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:34:36 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:34:36 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.5ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:34:37 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:34:38 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:35:00 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:35:01 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:35:02 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:36:14 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:36:14 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:36:15 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 5314)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:36:41 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:37:10 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:38:08 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 09:41:37 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.5ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:25:38 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 9502)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:26:13 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.5ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:26:45 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 5314)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:27:08 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:27:19 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:27:30 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:09 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:33 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:36 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:37 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:39 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 5312)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:41 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:43 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:45 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:46 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:48 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:49 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:32:51 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 5314)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:35:30 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:35:31 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:35:35 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:35:35 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:35:37 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:35:37 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:35:39 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:35:40 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:35:42 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:08 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:09 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:11 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:13 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:15 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:16 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.5ms | Allocations: 5314)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:17 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:18 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:20 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:21 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:36:23 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:02 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.6ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.6ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:03 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:04 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:07 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:14 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:51 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:52 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:54 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:55 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:37:56 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 5314)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:38:32 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:38:35 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:38:37 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:39:08 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:39:16 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:39:18 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:39:20 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:39:22 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:39:23 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:48:34 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.5ms | Allocations: 5333)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:48:36 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:48:48 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:48:50 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:48:53 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:00 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5312)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:03 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:04 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:07 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.5ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:10 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:11 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:13 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:15 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:17 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:18 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:20 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:21 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:22 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:24 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:25 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:26 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 5314)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:27 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.5ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:28 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:30 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:31 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:32 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:33 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:34 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:35 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:37 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:38 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:39 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:40 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:44 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:45 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:46 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 5314)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:48 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-20 10:49:49 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 5311)
+
+
