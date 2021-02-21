@@ -9147,3 +9147,79 @@ Processing by UsersController#create as JSON
 Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 6117)
 
 
+Started GET "/gratitudes" for ::1 at 2021-02-21 13:09:44 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 9503)
+
+
+Started POST "/users" for ::1 at 2021-02-21 13:09:50 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Sarah", "user"=>{"name"=>"Sarah"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Sarah"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.8ms | Allocations: 8829)
+
+
+Started POST "/users" for ::1 at 2021-02-21 13:10:08 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.1ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1637)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 13:10:48 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"image_url", "user_id"=>4, "gratitude"=>{"user_id"=>4, "name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (pry):1:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ (pry):1:in `create'
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 4], ["name", "Delicous food"], ["description", "all the kinds"], ["reason", "why wouldn't you"], ["created_at", "2021-02-21 20:13:18.656051"], ["updated_at", "2021-02-21 20:13:18.656051"]]
+  ↳ (pry):1:in `create'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ (pry):1:in `create'
+Completed 204 No Content in 189626ms (ActiveRecord: 8.4ms | Allocations: 115240)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 13:16:11 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 1.1ms | Allocations: 9789)
+
+
+Started POST "/users" for ::1 at 2021-02-21 13:16:21 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 1.2ms | Allocations: 4629)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 13:16:38 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"image_url", "user_id"=>4, "gratitude"=>{"user_id"=>4, "name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 4], ["name", "Delicous food"], ["description", "all the kinds"], ["reason", "why wouldn't you"], ["created_at", "2021-02-21 20:16:38.380085"], ["updated_at", "2021-02-21 20:16:38.380085"]]
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 8.0ms | Allocations: 6845)
+
+
