@@ -43,11 +43,10 @@ class ApiService {
                description: description,
                reason: reason,
                image: image, 
-               user_id: userId
+               user_id: userId,
            })
        })
        .then(res => res.json())
-     
    }
 
    
