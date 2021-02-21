@@ -13,6 +13,10 @@
   color: white;
 }
 
+.black {
+  color: rgb(15, 12, 12);
+}
+
 .bg-img{
   background: url("../Gratitudes_Project_JS-frontend/john-towner-3Kv48NS4WUU-unsplash.jpg") no-repeat right top;
   height: 800px;
