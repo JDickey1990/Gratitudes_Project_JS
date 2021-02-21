@@ -13,18 +13,12 @@ class User {
             .then(userData => 
                  {
                 const newUser = new User(userData)
-                newUser.renderUsersPage()
+                Ui.renderUsersPage()
                 newUser.renderUserGratitudes()
         }) 
         
     }
 
-     renderUsersPage(){
-        Ui.appendQuotes()
-        let page = document.querySelector(".UIPage")
-        page.innerHTML = Ui.userPage
-
-    }
 
     renderUserGratitudes(){
         const list = document.querySelector(".gratitudes-container")

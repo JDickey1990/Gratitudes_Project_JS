@@ -26,6 +26,22 @@ class Ui {
     static getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
       }
+
+
+
+      static renderUsersPage(){
+        Ui.appendQuotes()
+
+        let page = document.querySelector(".UIPage")
+        let bgDiv = document.querySelector(".bg-img")
+        let quotes = document.querySelector("#quotes")
+
+        page.setAttribute("class", "UIpage")
+        page.innerHTML = Ui.userPage
+        
+        bgDiv.setAttribute("class", "")
+        quotes.setAttribute("class", "black heading")
+    }
     
     //   static renderUsersPageHTML(){
           
@@ -62,7 +78,7 @@ class Ui {
       static userPage =    
                 `
                     <form class="new-gratitude-form">
-                        <h1> 99 Problems but this ain't one!</h1>
+                        <h1>I got 99 Problems but this ain't one!</h1>
 
                         <input
                             type="text"
