@@ -1,4 +1,5 @@
 .card {
+  background-color:rgb(133, 88, 66);
   text-align: center;
   border: grey solid 1px;
   padding: 1rem;
@@ -6,11 +7,15 @@
   height: 25rem;
   display: inline-grid;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #72c472
+  box-shadow: 3px 4px #040a04
 }
 
 .white {
   color: white;
+}
+
+.grey {
+  background-color:white;
 }
 
 .black {
@@ -20,6 +25,12 @@
 .bg-img{
   background: url("../Gratitudes_Project_JS-frontend/john-towner-3Kv48NS4WUU-unsplash.jpg") no-repeat right top;
   height: 800px;
+  background-size: cover;
+}
+
+.quote-img{
+  background: url("../Gratitudes_Project_JS-frontend/keith-misner-h0Vxgz5tyXA-unsplash.jpg") no-repeat right top;
+  height: 200px;
   background-size: cover;
 }
 

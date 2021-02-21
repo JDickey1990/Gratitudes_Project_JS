@@ -30,23 +30,23 @@ class Ui {
 
 
       static renderUsersPage(){
-        Ui.appendQuotes()
-
-        let page = document.querySelector(".UIPage")
+       
+        let page = document.querySelector(".IndexPage")
         let bgDiv = document.querySelector(".bg-img")
         let quotes = document.querySelector("#quotes")
-
-        page.setAttribute("class", "UIpage")
+       
+        page.setAttribute("class", "show-page")
         page.innerHTML = Ui.userPage
-        
-        bgDiv.setAttribute("class", "")
-        quotes.setAttribute("class", "black heading")
+
+        bgDiv.setAttribute("class", "grey")
+        quotes.setAttribute("class", "white heading quote-img")
+        Ui.appendQuotes()
     }
     
     //   static renderUsersPageHTML(){
           
-    //        `
-    //             <form class="new-gratitude-form">
+    //        `  <div class="new-gratitude-form">
+    //             <form>
     //                 <h1> 99 Problems but this ain't one!</h1>
 
     //                 <input
@@ -72,12 +72,15 @@ class Ui {
     //                     class="submit"
     //                 />
     //             </form>
+                // </div>
+
     //       `
     //   }
 
       static userPage =    
                 `
-                    <form class="new-gratitude-form">
+                <div class="new-gratitude-form">
+                    <form>
                         <h1>I got 99 Problems but this ain't one!</h1>
 
                         <input
@@ -91,7 +94,7 @@ class Ui {
                         <br><br>
                         <input
                             type="text"
-                            name="Description"
+                            name="description"
                             value=""
                             placeholder="Description"
                             class="input-text"
@@ -100,7 +103,7 @@ class Ui {
                         <br><br>
                         <input
                             type="text"
-                            name="Reason"
+                            name="reason"
                             value=""
                             placeholder="Reason"
                             class="input-text"
@@ -123,6 +126,8 @@ class Ui {
                             class="submit"
                         />
                     </form>
+
+                </div>
 
                     <div id="gratitudes-container" class="gratitudes-container">
                         <h3>These are a few of the things you are grateful for!</h3>

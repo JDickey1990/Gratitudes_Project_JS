@@ -31,5 +31,24 @@ class ApiService {
       
     }
 
+    fetchCreateGratitude(name, description,reason, image, userId){
+        return fetch(`http://localhost:3000/gratitudes`, {
+           method: "POST",
+           headers: {
+           "Content-Type": "application/json",
+           "Accept": "application/json"
+           },
+           body: JSON.stringify({
+               name: name,
+               description: description,
+               reason: reason,
+               image: image, 
+               user_id: userId
+           })
+       })
+       .then(res => res.json())
+     
+   }
+
    
 }

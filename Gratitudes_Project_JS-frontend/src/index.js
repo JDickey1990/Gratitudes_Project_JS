@@ -13,12 +13,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function bindEventListeners() {
     const login = document.querySelector(".new-user-container")
+    // let newGratitude = document.querySelector(".new-gratitude-form")
 
     login.addEventListener("submit", (e) => {
         e.preventDefault()
         const userName = e.target.name.value
         User.generateUser(userName)
     })
+
+    // if(newGratitude) {
+    //     newGratitude.addEventListener("submit", (e) => {
+    //         e.preventDefault()
+    //         const gName = e.target.name.value
+            
+    //     })
+    // }
+    
+ 
 }
 
 

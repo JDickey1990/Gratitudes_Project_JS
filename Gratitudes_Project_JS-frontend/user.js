@@ -41,8 +41,9 @@ class User {
                 div.appendChild(p)
             
                 list.appendChild(div)
-            })
-      
+            }) 
+            const user_id = this.id     
+        Gratitude.eventListeners(user_id)
     }
 
 }
