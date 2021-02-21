@@ -26,6 +26,71 @@ class Ui {
     static getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
       }
-
     
+    //   static renderUsersPageHTML(){
+          
+    //        `
+    //             <form class="new-gratitude-form">
+    //                 <h1> 99 Problems but this ain't one!</h1>
+
+    //                 <input
+    //                     type="text"
+    //                     name="name"
+    //                     value=""
+    //                     placeholder="Enter what you are grateful for..."
+    //                     class="input-text"
+    //                 />
+    //                 <br />
+    //                 <input
+    //                     type="text"
+    //                     name="image"
+    //                     value=""
+    //                     placeholder="Enter an image URL..."
+    //                     class="input-text"
+    //                 />
+    //                 <br />
+    //                 <input
+    //                     type="submit"
+    //                     name="submit"
+    //                     value="Add a new gratitude"
+    //                     class="submit"
+    //                 />
+    //             </form>
+    //       `
+    //   }
+
+      static userPage =    
+                `
+                    <form class="new-gratitude-form">
+                        <h1> 99 Problems but this ain't one!</h1>
+
+                        <input
+                            type="text"
+                            name="name"
+                            value=""
+                            placeholder="Enter what you are grateful for..."
+                            class="input-text"
+                        />
+                        <br />
+                        <input
+                            type="text"
+                            name="image"
+                            value=""
+                            placeholder="Enter an image URL..."
+                            class="input-text"
+                        />
+                        <br />
+                        <input
+                            type="submit"
+                            name="submit"
+                            value="Add a new gratitude"
+                            class="submit"
+                        />
+                    </form>
+
+                    <div id="gratitudes-container" class="gratitudes-container">
+                        <h3>These are a few of the things you are grateful for!</h3>
+                       
+                    </div>
+                `
 }

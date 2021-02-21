@@ -1,10 +1,13 @@
 //anything that doesn't belong in gratitude.js/service.js etc..
  const apiService = new ApiService()
+
+ 
  
 document.addEventListener("DOMContentLoaded", function() {
     bindEventListeners()
     Gratitude.generateGratitudes()
     Ui.appendQuotes()
+   
    
 })
 
