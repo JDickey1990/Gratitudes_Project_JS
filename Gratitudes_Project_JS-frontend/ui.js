@@ -68,18 +68,38 @@ class Ui {
                             type="text"
                             name="name"
                             value=""
-                            placeholder="Enter what you are grateful for..."
+                            placeholder="What you are grateful for..."
                             class="input-text"
+                            size="40"
                         />
-                        <br />
+                        <br><br>
+                        <input
+                            type="text"
+                            name="Description"
+                            value=""
+                            placeholder="Description"
+                            class="input-text"
+                            size="40"
+                        />
+                        <br><br>
+                        <input
+                            type="text"
+                            name="Reason"
+                            value=""
+                            placeholder="Reason"
+                            class="input-text"
+                            size="40"
+                        />
+                        <br><br>
                         <input
                             type="text"
                             name="image"
                             value=""
                             placeholder="Enter an image URL..."
                             class="input-text"
+                            size="40"
                         />
-                        <br />
+                        <br><br>
                         <input
                             type="submit"
                             name="submit"
