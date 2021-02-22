@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2021_02_14_171633) do
     t.string "name"
     t.string "description"
     t.string "reason"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_gratitudes_on_user_id"

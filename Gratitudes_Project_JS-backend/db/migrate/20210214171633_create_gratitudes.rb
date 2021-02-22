@@ -5,6 +5,7 @@ class CreateGratitudes < ActiveRecord::Migration[6.0]
       t.string :name 
       t.string :description
       t.string :reason
+      t.string :image
       t.timestamps
     end
   end

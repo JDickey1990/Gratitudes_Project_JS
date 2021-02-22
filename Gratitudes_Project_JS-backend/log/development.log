@@ -9223,3 +9223,627 @@ Processing by GratitudesController#create as JSON
 Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 8.0ms | Allocations: 6845)
 
 
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210214171206)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210214171206"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateGratitudes (20210214171633)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "gratitudes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "description" varchar, "reason" varchar, "image" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_gratitudes_on_user_id" ON "gratitudes" ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210214171633"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-21 20:26:24.005286"], ["updated_at", "2021-02-21 20:26:24.005286"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "gratitudes"[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "gratitudes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "description" varchar, "reason" varchar, "image" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE  INDEX "index_gratitudes_on_user_id" ON "gratitudes" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210214171633)[0m
+  [1m[35m (5.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210214171206);
+
+[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-21 20:26:32.174851"], ["updated_at", "2021-02-21 20:26:32.174851"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "d1c18f71ac5fee37c7fa47cf14202fd08aafe065"], ["created_at", "2021-02-21 20:26:32.188579"], ["updated_at", "2021-02-21 20:26:32.188579"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "gratitudes"[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "gratitudes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar, "description" varchar, "reason" varchar, "image" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE  INDEX "index_gratitudes_on_user_id" ON "gratitudes" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210214171633)[0m
+  [1m[35m (6.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210214171206);
+
+[0m
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-21 20:26:32.272202"], ["updated_at", "2021-02-21 20:26:32.272202"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2021-02-21 20:26:32.282704"], ["key", "environment"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "d1c18f71ac5fee37c7fa47cf14202fd08aafe065"], ["created_at", "2021-02-21 20:26:32.294208"], ["updated_at", "2021-02-21 20:26:32.294208"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Sarah"], ["created_at", "2021-02-21 20:26:32.341914"], ["updated_at", "2021-02-21 20:26:32.341914"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Kenz"], ["created_at", "2021-02-21 20:26:32.351135"], ["updated_at", "2021-02-21 20:26:32.351135"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Money In The Bank"], ["created_at", "2021-02-21 20:26:32.447695"], ["updated_at", "2021-02-21 20:26:32.447695"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Good Friends"], ["created_at", "2021-02-21 20:26:32.456870"], ["updated_at", "2021-02-21 20:26:32.456870"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Freedom Of Religion"], ["created_at", "2021-02-21 20:26:32.465718"], ["updated_at", "2021-02-21 20:26:32.465718"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.6ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Parents"], ["created_at", "2021-02-21 20:26:32.473828"], ["updated_at", "2021-02-21 20:26:32.473828"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Weekends"], ["created_at", "2021-02-21 20:26:32.481595"], ["updated_at", "2021-02-21 20:26:32.481595"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Pets"], ["created_at", "2021-02-21 20:26:32.489815"], ["updated_at", "2021-02-21 20:26:32.489815"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Learning From Mistakes"], ["created_at", "2021-02-21 20:26:32.498388"], ["updated_at", "2021-02-21 20:26:32.498388"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.4ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Opportunity To Get An Education"], ["created_at", "2021-02-21 20:26:32.506783"], ["updated_at", "2021-02-21 20:26:32.506783"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Having A Home"], ["created_at", "2021-02-21 20:26:32.523091"], ["updated_at", "2021-02-21 20:26:32.523091"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.1ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "The Ability To Read"], ["created_at", "2021-02-21 20:26:32.532916"], ["updated_at", "2021-02-21 20:26:32.532916"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Breathing Fresh Air"], ["created_at", "2021-02-21 20:26:32.542968"], ["updated_at", "2021-02-21 20:26:32.542968"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Laughter"], ["created_at", "2021-02-21 20:26:32.552397"], ["updated_at", "2021-02-21 20:26:32.552397"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.2ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Sunshine"], ["created_at", "2021-02-21 20:26:32.561885"], ["updated_at", "2021-02-21 20:26:32.561885"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Time"], ["created_at", "2021-02-21 20:26:32.572673"], ["updated_at", "2021-02-21 20:26:32.572673"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Clean Water"], ["created_at", "2021-02-21 20:26:32.581623"], ["updated_at", "2021-02-21 20:26:32.581623"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Books"], ["created_at", "2021-02-21 20:26:32.590341"], ["updated_at", "2021-02-21 20:26:32.590341"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Kindness Of A Stranger"], ["created_at", "2021-02-21 20:26:32.599159"], ["updated_at", "2021-02-21 20:26:32.599159"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Campfires"], ["created_at", "2021-02-21 20:26:32.608158"], ["updated_at", "2021-02-21 20:26:32.608158"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Art"], ["created_at", "2021-02-21 20:26:32.618047"], ["updated_at", "2021-02-21 20:26:32.618047"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Mountains"], ["created_at", "2021-02-21 20:26:32.627477"], ["updated_at", "2021-02-21 20:26:32.627477"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Grocery Stores"], ["created_at", "2021-02-21 20:26:32.636594"], ["updated_at", "2021-02-21 20:26:32.636594"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Sunsets"], ["created_at", "2021-02-21 20:26:32.645960"], ["updated_at", "2021-02-21 20:26:32.645960"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Moon & Stars"], ["created_at", "2021-02-21 20:26:32.656686"], ["updated_at", "2021-02-21 20:26:32.656686"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Air Conditioning"], ["created_at", "2021-02-21 20:26:32.665147"], ["updated_at", "2021-02-21 20:26:32.665147"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Oceans"], ["created_at", "2021-02-21 20:26:32.673487"], ["updated_at", "2021-02-21 20:26:32.673487"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Modern Medicine"], ["created_at", "2021-02-21 20:26:32.682492"], ["updated_at", "2021-02-21 20:26:32.682492"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Music"], ["created_at", "2021-02-21 20:26:32.692234"], ["updated_at", "2021-02-21 20:26:32.692234"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.5ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Modern Medicine"], ["created_at", "2021-02-21 20:26:32.701168"], ["updated_at", "2021-02-21 20:26:32.701168"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Entrpreneurs"], ["created_at", "2021-02-21 20:26:32.717693"], ["updated_at", "2021-02-21 20:26:32.717693"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (1.0ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["name", "Inventors"], ["created_at", "2021-02-21 20:26:32.726566"], ["updated_at", "2021-02-21 20:26:32.726566"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGratitude Create (0.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["name", "Home"], ["description", "The house we live in currently"], ["reason", "It keeps us warm and we have shelter so at night if it is raining or snowing we are safe."], ["created_at", "2021-02-21 20:26:32.736277"], ["updated_at", "2021-02-21 20:26:32.736277"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/gratitudes" for ::1 at 2021-02-21 13:27:20 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.8ms | Allocations: 10894)
+
+
+Started POST "/users" for ::1 at 2021-02-21 13:27:23 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Sarah", "user"=>{"name"=>"Sarah"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Sarah"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 29ms (Views: 21.8ms | ActiveRecord: 1.5ms | Allocations: 11277)
+
+
+Started POST "/users" for ::1 at 2021-02-21 13:27:36 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jordan"], ["created_at", "2021-02-21 20:27:36.100653"], ["updated_at", "2021-02-21 20:27:36.100653"]]
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:17:in `create'
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:18:in `create'
+Completed 200 OK in 21ms (Views: 2.3ms | ActiveRecord: 7.3ms | Allocations: 7666)
+
+
+Started POST "/users" for ::1 at 2021-02-21 13:28:51 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.5ms | Allocations: 1637)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 13:29:09 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_z2rWfGh9Ue5JrtfTlGaW7aReLDw5rH3gA&usqp=CAU", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_z2rWfGh9Ue5JrtfTlGaW7aReLDw5rH3gA&usqp=CAU"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[36mGratitude Create (1.1ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Delicous food"], ["description", "all the kinds"], ["reason", "why wouldn't you"], ["created_at", "2021-02-21 20:29:09.148007"], ["updated_at", "2021-02-21 20:29:09.148007"]]
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 10.1ms | Allocations: 6807)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 13:30:01 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_z2rWfGh9Ue5JrtfTlGaW7aReLDw5rH3gA&usqp=CAU", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_z2rWfGh9Ue5JrtfTlGaW7aReLDw5rH3gA&usqp=CAU"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[36mGratitude Create (0.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Delicous food"], ["description", "all the kinds"], ["reason", "why wouldn't you"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_z2rWfGh9Ue5JrtfTlGaW7aReLDw5rH3gA&usqp=CAU"], ["created_at", "2021-02-21 20:30:01.296650"], ["updated_at", "2021-02-21 20:30:01.296650"]]
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 8.1ms | Allocations: 14342)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 13:30:36 -0700
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_z2rWfGh9Ue5JrtfTlGaW7aReLDw5rH3gA&usqp=CAU", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"Delicous food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_z2rWfGh9Ue5JrtfTlGaW7aReLDw5rH3gA&usqp=CAU"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (pry):1:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ (pry):1:in `create'
+  [1m[36mGratitude Create (8.2ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Delicous food"], ["description", "all the kinds"], ["reason", "why wouldn't you"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_z2rWfGh9Ue5JrtfTlGaW7aReLDw5rH3gA&usqp=CAU"], ["created_at", "2021-02-21 20:31:01.029197"], ["updated_at", "2021-02-21 20:31:01.029197"]]
+  ↳ (pry):1:in `create'
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ (pry):1:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[36mGratitude Create (8.1ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Delicous food"], ["description", "all the kinds"], ["reason", "why wouldn't you"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_z2rWfGh9Ue5JrtfTlGaW7aReLDw5rH3gA&usqp=CAU"], ["created_at", "2021-02-21 20:31:20.236405"], ["updated_at", "2021-02-21 20:31:20.236405"]]
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:15:in `create'
+Completed 200 OK in 43938ms (Views: 0.3ms | ActiveRecord: 32.3ms | Allocations: 48526)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 13:31:45 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 1.4ms | Allocations: 11215)
+
+
+Started POST "/users" for ::1 at 2021-02-21 13:31:48 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 8ms (Views: 2.9ms | ActiveRecord: 1.0ms | Allocations: 5193)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 13:32:25 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Life", "description"=>"Yes", "reason"=>"Yes", "image"=>"gratitude = Gratitude.create(name: params[:name], description: params[:description], reason: params[:reason], user_id: params[:user_id], image: params[:image])", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"Life", "description"=>"Yes", "reason"=>"Yes", "image"=>"gratitude = Gratitude.create(name: params[:name], description: params[:description], reason: params[:reason], user_id: params[:user_id], image: params[:image])"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mGratitude Create (1.4ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Life"], ["description", "Yes"], ["reason", "Yes"], ["image", "gratitude = Gratitude.create(name: params[:name], description: params[:description], reason: params[:reason], user_id: params[:user_id], image: params[:image])"], ["created_at", "2021-02-21 20:32:25.942622"], ["updated_at", "2021-02-21 20:32:25.942622"]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 10.1ms | Allocations: 6813)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" ORDER BY "gratitudes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/gratitudes" for ::1 at 2021-02-21 13:36:16 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (1.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 1.5ms | Allocations: 6445)
+
+
+Started POST "/users" for ::1 at 2021-02-21 13:36:19 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.7ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 18ms (Views: 11.1ms | ActiveRecord: 1.4ms | Allocations: 2545)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 13:36:46 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Sarah", "description"=>"Yes", "reason"=>"Yes", "image"=>"image_url", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"Sarah", "description"=>"Yes", "reason"=>"Yes", "image"=>"image_url"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mGratitude Create (3.2ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Sarah"], ["description", "Yes"], ["reason", "Yes"], ["image", "image_url"], ["created_at", "2021-02-21 20:36:46.045885"], ["updated_at", "2021-02-21 20:36:46.045885"]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[35m (28.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+Completed 200 OK in 63ms (Views: 0.8ms | ActiveRecord: 32.2ms | Allocations: 5384)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" ORDER BY "gratitudes"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/gratitudes" for ::1 at 2021-02-21 13:38:10 -0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.9ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 3.5ms | Allocations: 11954)
+
+
+Started POST "/users" for ::1 at 2021-02-21 13:38:13 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.9ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 53ms (Views: 30.2ms | ActiveRecord: 4.3ms | Allocations: 7640)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 13:38:24 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Ethereum", "description"=>"corn", "reason"=>"why wouldn't you", "image"=>"image_url", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"Ethereum", "description"=>"corn", "reason"=>"why wouldn't you", "image"=>"image_url"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mGratitude Create (2.9ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Ethereum"], ["description", "corn"], ["reason", "why wouldn't you"], ["image", "image_url"], ["created_at", "2021-02-21 20:38:24.322014"], ["updated_at", "2021-02-21 20:38:24.322014"]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[35m (21.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+Completed 200 OK in 69ms (Views: 0.9ms | ActiveRecord: 25.1ms | Allocations: 5813)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 13:39:30 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Ethereum", "description"=>"corn", "reason"=>"why wouldn't you", "image"=>"image_url", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"Ethereum", "description"=>"corn", "reason"=>"why wouldn't you", "image"=>"image_url"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mGratitude Create (2.8ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Ethereum"], ["description", "corn"], ["reason", "why wouldn't you"], ["image", "image_url"], ["created_at", "2021-02-21 20:39:30.531122"], ["updated_at", "2021-02-21 20:39:30.531122"]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[35m (21.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+Completed 200 OK in 67ms (Views: 0.9ms | ActiveRecord: 24.7ms | Allocations: 5406)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 13:39:37 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 6984)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 14:09:28 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.7ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.7ms | Allocations: 11768)
+
+
+Started POST "/users" for ::1 at 2021-02-21 14:09:33 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.9ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 32ms (Views: 12.9ms | ActiveRecord: 1.8ms | Allocations: 5792)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 14:13:54 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (1.6ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 1.6ms | Allocations: 6967)
+
+
+Started POST "/users" for ::1 at 2021-02-21 14:15:44 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.7ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 1.4ms | Allocations: 3080)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 14:15:55 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Bitcoin", "description"=>"corn", "reason"=>"why wouldn't you", "image"=>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAACDVBMVEXsNyT2zKZrb3JfmKnzqh+AgIDPICf2zKX////6z6j1zKcAAAD3y6j3y6XvNyTsNyXzOCT906vuNidhnK3zzab806v1NyL5rh7vNib60av/2a9ub3TpOiOsfFi8hV/vOCG/pItjam1NdH/YISSRHh+idlRSPzOVbU9fSzqDX0RpUT2pd1SfcFNLPTKcclBwVEMnJibUMB7gMyL6qyLqqiRRSUnwwpo9OzfWt5jiv50qLipcUUmqKBsAAA3cvZxkWUt9d2h+a10VExg7LSpFVFitkXlWW19CSE1vaFx/EQtVgZJgUTCeJR4AABa/hVhCOCw1PCxvWiiLaytFPCZZTTl2XEMgGxtBGB7AjyNrUSi8jypfFBx5Ykh8FSOafCxCMiZIRydeGCfcoiYJHCBlRjuBayq/KR5BKSWrfiJ4Gx/dq37LnnqTZkSLKh4UHx5YHh2Od15ULiY7QClvTDOmijFbVCYpLS8zGR+ecSeQcRJhTxi8kycfITFyVh2nfCpuKSFKRBOKcyOriW1uXkIIJCXn5erJzNBwEikaBAB0ZiqcHiZLEQ+dknM6LDZdEg0AFyUPCiZGABSSlZLM0NIwIxNrQE7NdYqTY2zukaGxb3pdR0qoeoXCaXWajIuppqaMiHCTFQRQVEVBEBBwb1w5RTsrCQopVV8iQVETNDBZGwA8NTkSKiE4YnAmAAuwIgxVeNcYAAAdJklEQVR4nN2di38Tx7XHJeNkmfW+Rl5ptbYea2I9bVkPP7RryZZleS2biDoBZChwQ2qIwLhg0TQiyQ3NDQ3cJLjmFm6TNrfFQKmT61L+xjuzqzcGr+B+QtY/AjELIsw3Z86cc+bMrMViGrm4xOCk0G1UQqz77YKDZWqfjviOhGYDPp/P/4tIIDoUjvr8wSFP2OcOeoIevyccCbtD7mDEP+IJRpYCOcdrHesrixl8592jHc", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"Bitcoin", "description"=>"corn", "reason"=>"why wouldn't you", "image"=>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAACDVBMVEXsNyT2zKZrb3JfmKnzqh+AgIDPICf2zKX////6z6j1zKcAAAD3y6j3y6XvNyTsNyXzOCT906vuNidhnK3zzab806v1NyL5rh7vNib60av/2a9ub3TpOiOsfFi8hV/vOCG/pItjam1NdH/YISSRHh+idlRSPzOVbU9fSzqDX0RpUT2pd1SfcFNLPTKcclBwVEMnJibUMB7gMyL6qyLqqiRRSUnwwpo9OzfWt5jiv50qLipcUUmqKBsAAA3cvZxkWUt9d2h+a10VExg7LSpFVFitkXlWW19CSE1vaFx/EQtVgZJgUTCeJR4AABa/hVhCOCw1PCxvWiiLaytFPCZZTTl2XEMgGxtBGB7AjyNrUSi8jypfFBx5Ykh8FSOafCxCMiZIRydeGCfcoiYJHCBlRjuBayq/KR5BKSWrfiJ4Gx/dq37LnnqTZkSLKh4UHx5YHh2Od15ULiY7QClvTDOmijFbVCYpLS8zGR+ecSeQcRJhTxi8kycfITFyVh2nfCpuKSFKRBOKcyOriW1uXkIIJCXn5erJzNBwEikaBAB0ZiqcHiZLEQ+dknM6LDZdEg0AFyUPCiZGABSSlZLM0NIwIxNrQE7NdYqTY2zukaGxb3pdR0qoeoXCaXWajIuppqaMiHCTFQRQVEVBEBBwb1w5RTsrCQopVV8iQVETNDBZGwA8NTkSKiE4YnAmAAuwIgxVeNcYAAAdJklEQVR4nN2di38Tx7XHJeNkmfW+Rl5ptbYea2I9bVkPP7RryZZleS2biDoBZChwQ2qIwLhg0TQiyQ3NDQ3cJLjmFm6TNrfFQKmT61L+xjuzqzcGr+B+QtY/AjELIsw3Z86cc+bMrMViGrm4xOCk0G1UQqz77YKDZWqfjviOhGYDPp/P/4tIIDoUjvr8wSFP2OcOeoIevyccCbtD7mDEP+IJRpYCOcdrHesrixl8592jHc"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mGratitude Create (6.1ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Bitcoin"], ["description", "corn"], ["reason", "why wouldn't you"], ["image", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAACDVBMVEXsNyT2zKZrb3JfmKnzqh+AgIDPICf2zKX////6z6j1zKcAAAD3y6j3y6XvNyTsNyXzOCT906vuNidhnK3zzab806v1NyL5rh7vNib60av/2a9ub3TpOiOsfFi8hV/vOCG/pItjam1NdH/YISSRHh+idlRSPzOVbU9fSzqDX0RpUT2pd1SfcFNLPTKcclBwVEMnJibUMB7gMyL6qyLqqiRRSUnwwpo9OzfWt5jiv50qLipcUUmqKBsAAA3cvZxkWUt9d2h+a10VExg7LSpFVFitkXlWW19CSE1vaFx/EQtVgZJgUTCeJR4AABa/hVhCOCw1PCxvWiiLaytFPCZZTTl2XEMgGxtBGB7AjyNrUSi8jypfFBx5Ykh8FSOafCxCMiZIRydeGCfcoiYJHCBlRjuBayq/KR5BKSWrfiJ4Gx/dq37LnnqTZkSLKh4UHx5YHh2Od15ULiY7QClvTDOmijFbVCYpLS8zGR+ecSeQcRJhTxi8kycfITFyVh2nfCpuKSFKRBOKcyOriW1uXkIIJCXn5erJzNBwEikaBAB0ZiqcHiZLEQ+dknM6LDZdEg0AFyUPCiZGABSSlZLM0NIwIxNrQE7NdYqTY2zukaGxb3pdR0qoeoXCaXWajIuppqaMiHCTFQRQVEVBEBBwb1w5RTsrCQopVV8iQVETNDBZGwA8NTkSKiE4YnAmAAuwIgxVeNcYAAAdJklEQVR4nN2di38Tx7XHJeNkmfW+Rl5ptbYea2I9bVkPP7RryZZleS2biDoBZChwQ2qIwLhg0TQiyQ3NDQ3cJLjmFm6TNrfFQKmT61L+xjuzqzcGr+B+QtY/AjELIsw3Z86cc+bMrMViGrm4xOCk0G1UQqz77YKDZWqfjviOhGYDPp/P/4tIIDoUjvr8wSFP2OcOeoIevyccCbtD7mDEP+IJRpYCOcdrHesrixl8592jHc"], ["created_at", "2021-02-21 21:15:55.315398"], ["updated_at", "2021-02-21 21:15:55.315398"]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[35m (28.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+Completed 200 OK in 91ms (Views: 1.3ms | ActiveRecord: 35.8ms | Allocations: 5986)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 19:00:50 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 11944)
+
+
+Started POST "/users" for ::1 at 2021-02-21 19:00:55 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 8ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 5972)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 19:01:30 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"Ethereum", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAACDVBMVEXsNyT2zKZrb3JfmKnzqh+AgIDPICf2zKX////6z6j1zKcAAAD3y6j3y6XvNyTsNyXzOCT906vuNidhnK3zzab806v1NyL5rh7vNib60av/2a9ub3TpOiOsfFi8hV/vOCG/pItjam1NdH/YISSRHh+idlRSPzOVbU9fSzqDX0RpUT2pd1SfcFNLPTKcclBwVEMnJibUMB7gMyL6qyLqqiRRSUnwwpo9OzfWt5jiv50qLipcUUmqKBsAAA3cvZxkWUt9d2h+a10VExg7LSpFVFitkXlWW19CSE1vaFx/EQtVgZJgUTCeJR4AABa/hVhCOCw1PCxvWiiLaytFPCZZTTl2XEMgGxtBGB7AjyNrUSi8jypfFBx5Ykh8FSOafCxCMiZIRydeGCfcoiYJHCBlRjuBayq/KR5BKSWrfiJ4Gx/dq37LnnqTZkSLKh4UHx5YHh2Od15ULiY7QClvTDOmijFbVCYpLS8zGR+ecSeQcRJhTxi8kycfITFyVh2nfCpuKSFKRBOKcyOriW1uXkIIJCXn5erJzNBwEikaBAB0ZiqcHiZLEQ+dknM6LDZdEg0AFyUPCiZGABSSlZLM0NIwIxNrQE7NdYqTY2zukaGxb3pdR0qoeoXCaXWajIuppqaMiHCTFQRQVEVBEBBwb1w5RTsrCQopVV8iQVETNDBZGwA8NTkSKiE4YnAmAAuwIgxVeNcYAAAdJklEQVR4nN2di38Tx7XHJeNkmfW+Rl5ptbYea2I9bVkPP7RryZZleS2biDoBZChwQ2qIwLhg0TQiyQ3NDQ3cJLjmFm6TNrfFQKmT61L+xjuzqzcGr+B+QtY/AjELIsw3Z86cc+bMrMViGrm4xOCk0G1UQqz77YKDZWqfjviOhGYDPp/P/4tIIDoUjvr8wSFP2OcOeoIevyccCbtD7mDEP+IJRpYCOcdrHesrixl8592jHc", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"Ethereum", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAACDVBMVEXsNyT2zKZrb3JfmKnzqh+AgIDPICf2zKX////6z6j1zKcAAAD3y6j3y6XvNyTsNyXzOCT906vuNidhnK3zzab806v1NyL5rh7vNib60av/2a9ub3TpOiOsfFi8hV/vOCG/pItjam1NdH/YISSRHh+idlRSPzOVbU9fSzqDX0RpUT2pd1SfcFNLPTKcclBwVEMnJibUMB7gMyL6qyLqqiRRSUnwwpo9OzfWt5jiv50qLipcUUmqKBsAAA3cvZxkWUt9d2h+a10VExg7LSpFVFitkXlWW19CSE1vaFx/EQtVgZJgUTCeJR4AABa/hVhCOCw1PCxvWiiLaytFPCZZTTl2XEMgGxtBGB7AjyNrUSi8jypfFBx5Ykh8FSOafCxCMiZIRydeGCfcoiYJHCBlRjuBayq/KR5BKSWrfiJ4Gx/dq37LnnqTZkSLKh4UHx5YHh2Od15ULiY7QClvTDOmijFbVCYpLS8zGR+ecSeQcRJhTxi8kycfITFyVh2nfCpuKSFKRBOKcyOriW1uXkIIJCXn5erJzNBwEikaBAB0ZiqcHiZLEQ+dknM6LDZdEg0AFyUPCiZGABSSlZLM0NIwIxNrQE7NdYqTY2zukaGxb3pdR0qoeoXCaXWajIuppqaMiHCTFQRQVEVBEBBwb1w5RTsrCQopVV8iQVETNDBZGwA8NTkSKiE4YnAmAAuwIgxVeNcYAAAdJklEQVR4nN2di38Tx7XHJeNkmfW+Rl5ptbYea2I9bVkPP7RryZZleS2biDoBZChwQ2qIwLhg0TQiyQ3NDQ3cJLjmFm6TNrfFQKmT61L+xjuzqzcGr+B+QtY/AjELIsw3Z86cc+bMrMViGrm4xOCk0G1UQqz77YKDZWqfjviOhGYDPp/P/4tIIDoUjvr8wSFP2OcOeoIevyccCbtD7mDEP+IJRpYCOcdrHesrixl8592jHc"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mGratitude Create (0.7ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "Ethereum"], ["description", "all the kinds"], ["reason", "why wouldn't you"], ["image", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAACDVBMVEXsNyT2zKZrb3JfmKnzqh+AgIDPICf2zKX////6z6j1zKcAAAD3y6j3y6XvNyTsNyXzOCT906vuNidhnK3zzab806v1NyL5rh7vNib60av/2a9ub3TpOiOsfFi8hV/vOCG/pItjam1NdH/YISSRHh+idlRSPzOVbU9fSzqDX0RpUT2pd1SfcFNLPTKcclBwVEMnJibUMB7gMyL6qyLqqiRRSUnwwpo9OzfWt5jiv50qLipcUUmqKBsAAA3cvZxkWUt9d2h+a10VExg7LSpFVFitkXlWW19CSE1vaFx/EQtVgZJgUTCeJR4AABa/hVhCOCw1PCxvWiiLaytFPCZZTTl2XEMgGxtBGB7AjyNrUSi8jypfFBx5Ykh8FSOafCxCMiZIRydeGCfcoiYJHCBlRjuBayq/KR5BKSWrfiJ4Gx/dq37LnnqTZkSLKh4UHx5YHh2Od15ULiY7QClvTDOmijFbVCYpLS8zGR+ecSeQcRJhTxi8kycfITFyVh2nfCpuKSFKRBOKcyOriW1uXkIIJCXn5erJzNBwEikaBAB0ZiqcHiZLEQ+dknM6LDZdEg0AFyUPCiZGABSSlZLM0NIwIxNrQE7NdYqTY2zukaGxb3pdR0qoeoXCaXWajIuppqaMiHCTFQRQVEVBEBBwb1w5RTsrCQopVV8iQVETNDBZGwA8NTkSKiE4YnAmAAuwIgxVeNcYAAAdJklEQVR4nN2di38Tx7XHJeNkmfW+Rl5ptbYea2I9bVkPP7RryZZleS2biDoBZChwQ2qIwLhg0TQiyQ3NDQ3cJLjmFm6TNrfFQKmT61L+xjuzqzcGr+B+QtY/AjELIsw3Z86cc+bMrMViGrm4xOCk0G1UQqz77YKDZWqfjviOhGYDPp/P/4tIIDoUjvr8wSFP2OcOeoIevyccCbtD7mDEP+IJRpYCOcdrHesrixl8592jHc"], ["created_at", "2021-02-22 02:01:30.026071"], ["updated_at", "2021-02-22 02:01:30.026071"]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 9.4ms | Allocations: 7249)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 19:07:52 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.6ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.6ms | Allocations: 7343)
+
+
+Started POST "/users" for ::1 at 2021-02-21 19:07:55 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.6ms | Allocations: 3473)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 19:08:42 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 7319)
+
+
+Started POST "/users" for ::1 at 2021-02-21 19:08:45 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 1.0ms | Allocations: 3440)
+
+
+Started POST "/gratitudes" for ::1 at 2021-02-21 19:09:23 -0700
+Processing by GratitudesController#create as JSON
+  Parameters: {"name"=>"food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6EP-OUE5sUuiscdse5dfw2Xob3ksoQBXbJw&usqp=CAU", "user_id"=>3, "gratitude"=>{"user_id"=>3, "name"=>"food", "description"=>"all the kinds", "reason"=>"why wouldn't you", "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6EP-OUE5sUuiscdse5dfw2Xob3ksoQBXbJw&usqp=CAU"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[36mGratitude Create (1.4ms)[0m  [1m[32mINSERT INTO "gratitudes" ("user_id", "name", "description", "reason", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["name", "food"], ["description", "all the kinds"], ["reason", "why wouldn't you"], ["image", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6EP-OUE5sUuiscdse5dfw2Xob3ksoQBXbJw&usqp=CAU"], ["created_at", "2021-02-22 02:09:23.917136"], ["updated_at", "2021-02-22 02:09:23.917136"]]
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gratitudes_controller.rb:14:in `create'
+Completed 200 OK in 32ms (Views: 0.5ms | ActiveRecord: 11.0ms | Allocations: 7714)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 19:09:52 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.3ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.3ms | Allocations: 7503)
+
+
+Started POST "/users" for ::1 at 2021-02-21 19:09:55 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.7ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 20ms (Views: 12.7ms | ActiveRecord: 1.4ms | Allocations: 3624)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 19:12:22 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.5ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.5ms | Allocations: 7500)
+
+
+Started POST "/users" for ::1 at 2021-02-21 19:12:27 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.8ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 19ms (Views: 11.1ms | ActiveRecord: 1.5ms | Allocations: 3624)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 19:13:32 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.4ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 7500)
+
+
+Started POST "/users" for ::1 at 2021-02-21 19:13:37 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 3625)
+
+
+Started GET "/gratitudes" for ::1 at 2021-02-21 19:14:41 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 7500)
+
+
+Started POST "/users" for ::1 at 2021-02-21 19:14:45 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jordan", "user"=>{"name"=>"Jordan"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jordan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes" WHERE "gratitudes"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 3624)
+
+

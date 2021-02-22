@@ -10,6 +10,12 @@
   box-shadow: 3px 4px #040a04
 }
 
+card-img {
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+
 .white {
   color: white;
 }
