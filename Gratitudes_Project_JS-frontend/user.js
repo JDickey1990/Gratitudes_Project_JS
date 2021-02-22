@@ -30,19 +30,25 @@ class User {
                 const h4 = document.createElement("h4")
                 const p = document.createElement("p")
                 const img = document.createElement("img")
+                const button = document.createElement("button")
                 
                 div.setAttribute("class", "card")
                 div.setAttribute("data-id", gratitude.id)
                 img.setAttribute("src",gratitude.image)
                 img.setAttribute("class", "card-img" )
+                button.setAttribute("class", "delete-gratitude")
+                button.setAttribute("data-gratitude-id", gratitude.id)
+
                 h3.innerHTML = gratitude.name
                 h4.innerHTML = `Reason: ${gratitude.reason}`
                 p.innerHTML = `Description: ${gratitude.description}`
+                button.innerHTML = "Delete"
                 
                 div.appendChild(h3)
                 div.appendChild(h4)
                 div.appendChild(p)
                 div.appendChild(img)
+                div.appendChild(button)
             
                 list.appendChild(div)
             })  
