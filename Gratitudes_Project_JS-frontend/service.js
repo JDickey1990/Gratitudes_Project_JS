@@ -49,5 +49,17 @@ class ApiService {
        .then(res => res.json())
    }
 
+   fetchDeleteGratitude(gratitude_id){
+        return fetch(`${this.baseUrl}/gratitudes/${gratitude_id}`, {
+            method: "DELETE",
+            headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+            }
+      
+        })
+
+    }
+
    
 }
