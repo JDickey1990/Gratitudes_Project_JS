@@ -8,6 +8,17 @@ class User {
         User.allUsers.push(this)
     }
 
+    static eventListeners() {
+        const login = document.querySelector(".new-user-container")
+       
+        login.addEventListener("submit", (e) => {
+            e.preventDefault()
+            const userName = e.target.name.value
+            User.generateUser(userName)
+        })
+    }
+    
+    
     static generateUser(userName){
         apiService.fetchUser(userName)
             .then(userData => 

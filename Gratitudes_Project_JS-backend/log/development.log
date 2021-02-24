@@ -12367,3 +12367,11 @@ Processing by GratitudesController#destroy as JSON
 Completed 204 No Content in 23ms (ActiveRecord: 14.3ms | Allocations: 6470)
 
 
+Started GET "/gratitudes" for ::1 at 2021-02-24 16:05:05 -0700
+Processing by GratitudesController#index as */*
+  Parameters: {"gratitude"=>{}}
+  [1m[36mGratitude Load (0.2ms)[0m  [1m[34mSELECT "gratitudes".* FROM "gratitudes"[0m
+  ↳ app/controllers/gratitudes_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 6275)
+
+
