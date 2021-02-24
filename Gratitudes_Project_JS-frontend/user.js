@@ -23,7 +23,7 @@ class User {
     renderUserGratitudes(){
         const list = document.querySelector(".gratitudes-container")
             this.gratitudes.forEach(gratitude =>{
-              
+            //   call render gratitude here
                 const div = document.createElement("div")
                 const h2 = document.createElement("h2")
                 const h3 = document.createElement("h3")
