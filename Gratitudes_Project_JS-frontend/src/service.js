@@ -1,11 +1,9 @@
-//all fetch functions
 class ApiService {
 
     constructor(){
         this.baseUrl = `http://localhost:3000`
     }
 
-    //Retrieving all of the gratitude objects from the database
      fetchGratitudes(){
         return fetch(`${this.baseUrl}/gratitudes`, {
         headers: {
@@ -15,9 +13,8 @@ class ApiService {
         .then(res => res.json())
         }     
 
-    //Finding or creating a User object 
      fetchUser(userName){
-         return fetch(`http://localhost:3000/users`, {
+         return fetch(`${this.baseUrl}/users`, {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
@@ -32,7 +29,7 @@ class ApiService {
     }
 
     fetchCreateGratitude(name, description,reason, image, userId){
-        return fetch(`http://localhost:3000/gratitudes`, {
+        return fetch(`${this.baseUrl}/gratitudes`, {
            method: "POST",
            headers: {
            "Content-Type": "application/json",
