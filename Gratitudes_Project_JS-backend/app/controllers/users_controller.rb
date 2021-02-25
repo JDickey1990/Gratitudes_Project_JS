@@ -1,26 +1,8 @@
 class UsersController < ApplicationController
-    
-    def index 
-       
-    end 
-
-    def show 
-
-     
-    end 
-    
+   
     def create 
-       user = User.find_by(name: params[:name])
-        if user 
-            render json: user, include: [:gratitudes]
-        else 
-            newUser = User.create(name: params[:name])
-            render json: newUser, include: [:gratitudes]
-        end   
+        user = User.find_or_create_by(name: params[:name]) 
+        render json: user, include: [:gratitudes] 
     end 
-
-    def destroy 
-
-    end 
-    
+ 
 end
