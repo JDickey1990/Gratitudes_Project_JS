@@ -4,14 +4,9 @@ class GratitudesController < ApplicationController
         gratitudes = Gratitude.all
         render json: gratitudes
     end 
-
-    def show 
-        gratitude = Gratitude.find(params[:id])
-        render json: gratitude
-    end 
     
      def create 
-        gratitude = Gratitude.create(name: params[:name], description: params[:description], reason: params[:reason], user_id: params[:user_id], image: params[:image])
+        gratitude = Gratitude.create(gratitude_params)
         render json: gratitude
      end 
 
@@ -19,4 +14,11 @@ class GratitudesController < ApplicationController
         gratitude = Gratitude.find(params[:id])
         gratitude.destroy
     end 
+
+    private 
+
+    def gratitude_params
+        params.require(:gratitude).permit(:name, :description, :reason, :user_id, :image)
+    end
+
 end
