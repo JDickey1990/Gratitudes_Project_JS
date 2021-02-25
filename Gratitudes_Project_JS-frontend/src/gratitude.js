@@ -35,8 +35,8 @@ class Gratitude {
             const description = e.target.description.value
             const reason = e.target.reason.value
             const image = e.target.image.value
-            Gratitude.createGratitude(name, description,reason, image, userId)    
-            // newGratitude.reset()
+            Gratitude.createGratitude(name, description,reason, image, userId)  
+            document.getElementById("form").reset();
         })
 
         deleteButtons.forEach(button => {
@@ -53,7 +53,8 @@ class Gratitude {
             .then(gratitudeData => 
                  {
                 const newGratitude = new Gratitude(gratitudeData)
-                Ui.renderNewGratitude(newGratitude)
+                Ui.renderGratitude(newGratitude)
+                Gratitude.eventListeners()
                 }
             )
         
