@@ -4,7 +4,7 @@ class ApiService {
         this.baseUrl = `http://localhost:3000`
     }
 
-    async fetchGratitudes(){
+    async getGratitudes(){
         const res = await fetch(`${this.baseUrl}/gratitudes`, {
         headers: {
             'content-type': 'application/json',
