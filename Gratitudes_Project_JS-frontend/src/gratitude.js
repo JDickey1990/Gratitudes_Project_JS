@@ -1,4 +1,5 @@
 class Gratitude {
+    static allGratitudes = []
 
     constructor(gratitude){
         this.id = gratitude.id
@@ -6,23 +7,25 @@ class Gratitude {
         this.description = gratitude.description
         this.reason = gratitude.reason
         this.image = gratitude.image
+        Gratitude.allGratitudes.push(this)
     }
 
     static generateGratitudes(){
-        apiService.fetchGratitudes()
-        .then(data => 
-            data.forEach(gratitude => {
+        apiService.getGratitudes()
+        .then(function(data) {
+            const slicedData = data.slice(-20)
+            slicedData.forEach(gratitude => {
                 const newGratitude = new Gratitude(gratitude)
-                Gratitude.renderGratitudes(gratitude) 
+                newGratitude.renderGratitude()
             })
-        )  
+        })
     }
 
-    static renderGratitudes(gratitude) {
+    renderGratitude() { 
         const ul = document.querySelector(".gratitudes-list")
         const li = document.createElement("li")
-        li.innerHTML = gratitude.name
-        ul.appendChild(li)
+        li.innerHTML = this.name
+        ul.appendChild(li)    
     }
 
     static eventListeners(userId){
@@ -45,6 +48,7 @@ class Gratitude {
                 apiService.fetchDeleteGratitude(e.target.dataset.gratitudeId)
                 e.target.parentElement.remove()
             })
+            
         })
     }
 
