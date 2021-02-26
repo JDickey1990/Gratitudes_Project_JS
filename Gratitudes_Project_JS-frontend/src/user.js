@@ -31,10 +31,9 @@ class User {
     }
 
     renderUserGratitudes(){
-        const list = document.querySelector(".gratitudes-container")
-            this.gratitudes.forEach(gratitude =>{
-                Ui.renderGratitude(gratitude)
-            })
+        this.gratitudes.forEach(gratitude =>{
+            Ui.renderGratitude(gratitude)
+        })
     }
 
 }
