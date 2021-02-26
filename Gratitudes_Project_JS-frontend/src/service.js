@@ -4,16 +4,17 @@ class ApiService {
         this.baseUrl = `http://localhost:3000`
     }
 
-     fetchGratitudes(){
-        return fetch(`${this.baseUrl}/gratitudes`, {
+    async fetchGratitudes(){
+        const res = await fetch(`${this.baseUrl}/gratitudes`, {
         headers: {
             'content-type': 'application/json',
             }
         })
-        .then(res => res.json())
-        }     
+        const data = await res.json()
+        return data
+    }     
 
-     fetchUser(userName){
+    fetchUser(userName){
          return fetch(`${this.baseUrl}/users`, {
             method: "POST",
             headers: {
