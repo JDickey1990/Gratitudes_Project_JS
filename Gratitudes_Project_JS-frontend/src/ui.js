@@ -36,11 +36,7 @@ class Ui {
         p.innerHTML = `Description: ${gratitude.description}`
         button.innerHTML = "Delete"
         
-        div.appendChild(h3)
-        div.appendChild(h4)
-        div.appendChild(p)
-        div.appendChild(img)
-        div.appendChild(button)
+        div.append(h3, h4, p, img, button)
     
         list.appendChild(div)
 
