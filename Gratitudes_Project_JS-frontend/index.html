@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Gratitude</title>
 
-    <script type="application/javascript" src="src/ui.js" charset="UTF-8"></script>
-    <script type="application/javascript" src="src/user.js" charset="UTF-8"></script>
-    <script type="application/javascript" src="src/service.js" charset="UTF-8"></script>
-    <script type="application/javascript" src="src/index.js" charset="UTF-8"></script>
-    <script type="application/javascript" src="src/gratitude.js" charset="UTF-8"></script>
+    <script
+      type="application/javascript"
+      src="src/ui.js"
+      charset="UTF-8"
+    ></script>
+    <script
+      type="application/javascript"
+      src="src/user.js"
+      charset="UTF-8"
+    ></script>
+    <script
+      type="application/javascript"
+      src="src/service.js"
+      charset="UTF-8"
+    ></script>
+    <script
+      type="application/javascript"
+      src="src/index.js"
+      charset="UTF-8"
+    ></script>
+    <script
+      type="application/javascript"
+      src="src/gratitude.js"
+      charset="UTF-8"
+    ></script>
     <link rel="stylesheet" href="index.css" />
-    
   </head>
 
   <body class="wrapper">
-    <div class=bg-img>
-      <div class="white heading" id="quotes">
+    <div class="bg-img">
+      <header class="heading">
         <h1>Gratitudes</h1>
-        <h3 class= "Quotes" >“Cultivate the habit of being grateful for every good thing that comes to you, and to give thanks continuously. And because all things have contributed to your advancement, you should include all things in your gratitude.”</h3>  
-      </div>
+      </header>
 
-      <div class="IndexPage  list absolute">
+      <section class="quotes" id="quotes">
+        <p class="Quotes">
+          “Cultivate the habit of being grateful for every good thing that comes
+          to you, and to give thanks continuously. And because all things have
+          contributed to your advancement, you should include all things in your
+          gratitude.”
+        </p>
+      </section>
+
+      <section class="IndexPage list">
         <div class="new-user-container">
           <form>
             <input
@@ -29,25 +56,19 @@
               value=""
               placeholder="enter your name"
               class="user-name"
-              />
-              <input
-              type="submit"
-              name="submit"
-              value="Submit"
-              class="submit"
-            >
+            />
+            <input type="submit" name="submit" value="Submit" class="submit" />
           </form>
         </div>
+      </section>
 
-        <div class="white">
-          <h3 class=white>There are so many things to be grateful for! </h3>
-          <ul class="gratitudes-list" >
-          </ul>
-        </div>
+      <div class="gratitudes">
+       
+        <ul class="gratitudes-list">
+          <h3>There are so many things to be grateful for!</h3>
 
+        </ul>
       </div>
     </div>
   </body>
 </html>
-
-

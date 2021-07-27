@@ -6,9 +6,6 @@ class ApiService {
 
     async getGratitudes(){
         const res = await fetch(`${this.baseUrl}/gratitudes`, {
-        headers: {
-            'content-type': 'application/json',
-            }
         })
         const data = await res.json()
         return data

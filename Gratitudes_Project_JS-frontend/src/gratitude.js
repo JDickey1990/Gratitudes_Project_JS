@@ -15,7 +15,7 @@ class Gratitude {
         .then(function(data) {
             const slicedData = data.slice(-20)
             slicedData.forEach(gratitude => {
-                const newGratitude = new Gratitude(gratitude)
+                let newGratitude = new Gratitude(gratitude)
                 newGratitude.renderGratitude()
             })
         })
@@ -24,6 +24,7 @@ class Gratitude {
     renderGratitude() { 
         const ul = document.querySelector(".gratitudes-list")
         const li = document.createElement("li")
+        li.setAttribute("class", "gratitude")
         li.innerHTML = this.name
         ul.appendChild(li)    
     }
@@ -32,7 +33,7 @@ class Gratitude {
         let newGratitude = document.querySelector(".new-gratitude-form")
         let deleteButtons = document.querySelectorAll(".delete-gratitude")
 
-        newGratitude.addEventListener("submit", (e) => {
+        newGratitude.addEventListener("submit", e => {
             e.preventDefault()
             const name = e.target.name.value
             const description = e.target.description.value
@@ -43,8 +44,7 @@ class Gratitude {
         })
 
         deleteButtons.forEach(button => {
-            button.addEventListener("click", (e) =>{
-                e.preventDefault()
+            button.addEventListener("click", e =>{
                 apiService.fetchDeleteGratitude(e.target.dataset.gratitudeId)
                 e.target.parentElement.remove()
             })

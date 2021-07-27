@@ -2,9 +2,9 @@ class Ui {
 
     static renderUsersPage(){
        
-        let page = document.querySelector(".IndexPage")
-        let bgDiv = document.querySelector(".bg-img")
-        let quotes = document.querySelector("#quotes")
+        const page = document.querySelector(".IndexPage")
+        const bgDiv = document.querySelector(".bg-img")
+        const quotes = document.querySelector("#quotes")
        
         page.setAttribute("class", "show-page")
         page.innerHTML = Ui.userPage
@@ -17,7 +17,6 @@ class Ui {
     static renderGratitude(gratitude){
         const list = document.querySelector(".gratitudes-container")
         const div = document.createElement("div")
-        const h2 = document.createElement("h2")
         const h3 = document.createElement("h3")
         const h4 = document.createElement("h4")
         const p = document.createElement("p")
@@ -43,61 +42,60 @@ class Ui {
     }
     
     static userPage =    
-        `
-            <div class="new-gratitude-form">
-                <form id="form">
-                    <h1>I got 99 Problems but this ain't one!</h1>
+     `
+        <div class="new-gratitude-form">
+            <form id="form">
+                <h1>I got 99 Problems but this ain't one!</h1>
 
-                    <input
-                        type="text"
-                        name="name"
-                        value=""
-                        placeholder="What you are grateful for..."
-                        class="input-text"
-                        size="40"
-                    />
-                    <br><br>
-                    <input
-                        type="text"
-                        name="description"
-                        value=""
-                        placeholder="Description"
-                        class="input-text"
-                        size="40"
-                    />
-                    <br><br>
-                    <input
-                        type="text"
-                        name="reason"
-                        value=""
-                        placeholder="Reason"
-                        class="input-text"
-                        size="40"
-                    />
-                    <br><br>
-                    <input
-                        type="text"
-                        name="image"
-                        value=""
-                        placeholder="Enter an image URL..."
-                        class="input-text"
-                        size="40"
-                    />
-                    <br><br>
-                    <input
-                        type="submit"
-                        name="submit"
-                        value="Add a new gratitude"
-                        class="submit"
-                    />
-                </form>
+                <input
+                    type="text"
+                    name="name"
+                    value=""
+                    placeholder="What you are grateful for..."
+                    class="input-text"
+                    size="40"
+                />
+                <br><br>
+                <input
+                    type="text"
+                    name="description"
+                    value=""
+                    placeholder="Description"
+                    class="input-text"
+                    size="40"
+                />
+                <br><br>
+                <input
+                    type="text"
+                    name="reason"
+                    value=""
+                    placeholder="Reason"
+                    class="input-text"
+                    size="40"
+                />
+                <br><br>
+                <input
+                    type="text"
+                    name="image"
+                    value=""
+                    placeholder="Enter an image URL..."
+                    class="input-text"
+                    size="40"
+                />
+                <br><br>
+                <input
+                    type="submit"
+                    name="submit"
+                    value="Add a new gratitude"
+                    class="submit"
+                />
+            </form>
 
-            </div>
+        </div>
 
-            <div id="gratitudes-container" class="gratitudes-container">
-                <h3>These are a few of the things you are grateful for!</h3>
-                
-            </div>
+        <div id="gratitudes-container" class="gratitudes-container">
+            <h3>These are a few of the things you are grateful for!</h3>
+        </div>
     `
 
     static quotes = [
@@ -118,8 +116,8 @@ class Ui {
     ]
     
     static appendQuotes() {
-        let quotes = document.querySelector(".Quotes")
-        let number = Ui.getRandomInt(14)
+        const quotes = document.querySelector(".Quotes")
+        const number = Ui.getRandomInt(14)
         quotes.innerHTML = Ui.quotes[number]
     }
 
