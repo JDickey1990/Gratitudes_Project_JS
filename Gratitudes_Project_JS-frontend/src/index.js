@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     User.eventListeners()
     Gratitude.generateGratitudes()
     Ui.appendQuotes()
+    Ui.modalLoginHandler()
 })
      
 

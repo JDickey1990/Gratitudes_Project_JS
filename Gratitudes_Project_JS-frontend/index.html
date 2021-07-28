@@ -30,26 +30,35 @@
       charset="UTF-8"
     ></script>
     <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="wrapper">
+    <header class="heading">
+      <h1>Gratitudes</h1>
+      <nav>
+        <button class="show-modal">Login</button>
+      </nav>
+    </header>
     <div class="bg-img">
-      <header class="heading">
-        <h1>Gratitudes</h1>
-      </header>
+     
 
-      <section class="quotes" id="quotes">
-        <p class="Quotes">
-          “Cultivate the habit of being grateful for every good thing that comes
-          to you, and to give thanks continuously. And because all things have
-          contributed to your advancement, you should include all things in your
-          gratitude.”
-        </p>
+      <section class="quotes-container" id="quotes">
+        <q class="quotes">
+        </q>
+        <cite class="quote-author"></cite>
       </section>
 
-      <section class="IndexPage list">
-        <div class="new-user-container">
-          <form>
+      <section class="modal hidden IndexPage list">
+        <button class="close-modal" type="button">&times;</button>
+        <div class="login-form-container">
+          <form class="login-form">
             <input
               type="text"
               name="name"
@@ -57,18 +66,18 @@
               placeholder="enter your name"
               class="user-name"
             />
-            <input type="submit" name="submit" value="Submit" class="submit" />
+            <input type="submit" name="submit" value="LOGIN" class="submit" />
           </form>
         </div>
       </section>
 
-      <div class="gratitudes">
-       
+      <div class="overlay hidden"></div>
+
+      <!-- <div class="gratitudes">
         <ul class="gratitudes-list">
           <h3>There are so many things to be grateful for!</h3>
-
         </ul>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

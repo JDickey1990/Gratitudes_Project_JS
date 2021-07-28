@@ -3,41 +3,121 @@
   margin: 0;
   padding: 0;
   color: ivory;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
   margin: 20px 0;
+  font-weight: 600;
 }
 
-.wrapper {
+/* .wrapper {
   background: rgb(250, 250, 245);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: auto;
   max-width: 1200px;
-  padding: 2.25%; /* 18px / 800px */
+  padding: 2.25%;
   width: 100%;
-}
+} */
 /*---------- LANDING PAGE ----------*/
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: rgb(56, 56, 56);
 }
 
-.quotes {
-  color: ivory;
+.bg-img {
+  display: flex;
+}
+
+.quotes-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.quotes-container q {
+  align-self: center;
+  font-size: 3rem;
+  padding: 80px 50px;
+  margin: 80px 80px;
+}
+
+/*----------LOGIN MODAL ----------*/
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: rgba(56, 56, 56, 0.6);
+  padding: 6rem;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form input {
+  font: inherit;
+  font-size: 30px;
+}
+.input input:focus {
+  outline: none;
+  border-color: #4f005f;
+}
+
+.submit {
+  background-color: #8f8f8f;
+}
+
+.close-modal {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #8f8f8f;
+}
+
+.show-modal {
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+/* .new-user-container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
-
-}
-
-.new-user-container {
-  display: flex;
-  justify-content: space-around;
-}
+} */
 
 .gratitudes {
   width: 25%;
@@ -50,7 +130,7 @@ header {
 .gratitude {
   display: flex;
   justify-content: flex-start;
-  margin: 10px 20px ;
+  margin: 10px 20px;
 }
 
 /*---------- USER PAGE ----------*/
@@ -74,10 +154,13 @@ card-img {
 }
 
 .bg-img {
-  background: url("../Gratitudes_Project_JS-frontend/john-towner-3Kv48NS4WUU-unsplash.jpg")
-    no-repeat right top;
-  /* /* height: 800px; */
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../Gratitudes_Project_JS-frontend/john-towner-3Kv48NS4WUU-unsplash.jpg");
   background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
 }
 
 .quote-img {

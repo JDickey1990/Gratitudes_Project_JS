@@ -9,7 +9,7 @@ class User {
     }
 
     static eventListeners() {
-        const login = document.querySelector(".new-user-container")
+        const login = document.querySelector(".login-form-container")
        
         login.addEventListener("submit", e => {
             e.preventDefault()
